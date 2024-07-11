@@ -10,28 +10,38 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:image" content="https://reconfusion.github.io/img/pipeline.png">
+    <meta property="og:image" content="https://tracknerf.github.io/img/pipeline.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1711">
     <meta property="og:image:height" content="576">
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://reconfusion.github.io/" />
-    <meta property="og:title" content="TrackNeRF: Bundle Adjusting NeRF from Sparse and Noisy Views via Feature Tracks" />
-    <meta property="og:description" content="Neural radiance fields (NeRFs) generally require many images with accurate poses for accurate novel view synthesis, which does not reflect realistic setups where views can be sparse and poses can be noisy.
+    <meta property="og:url" content="https://tracknerf.github.io/" />
+    <meta property="og:title"
+        content="TrackNeRF: Bundle Adjusting NeRF from Sparse and Noisy Views via Feature Tracks" />
+    <meta property="og:description"
+        content="Neural radiance fields (NeRFs) generally require many images with accurate poses for accurate novel view synthesis, which does not reflect realistic setups where views can be sparse and poses can be noisy.
     Previous solutions for learning NeRFs with sparse views and noisy poses only consider local geometry consistency with pairs of views. 
     Closely following \textit{bundle adjustment} in Structure-from-Motion (SfM), we introduce TrackNeRF for more globally consistent geometry reconstruction and more accurate pose optimization. TrackNeRF introduces \textit{feature tracks}, \ie connected pixel trajectories across \textit{all} visible views that correspond to the \textit{same} 3D points. By enforcing reprojection consistency among feature tracks, TrackNeRF encourages holistic 3D consistency explicitly. Through extensive experiments, TrackNeRF sets a new benchmark in noisy and sparse view reconstruction.
     In particular, TrackNeRF shows significant improvements over the state-of-the-art BARF and SPARF by $\sim8$ and $\sim1$ in terms of PSNR on DTU under various sparse and noisy view setups." />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="TrackNeRF: Bundle Adjusting NeRF from Sparse and Noisy Views via Feature Tracks" />
-    <meta name="twitter:description" content="Neural radiance fields (NeRFs) generally require many images with accurate poses for accurate novel view synthesis, which does not reflect realistic setups where views can be sparse and poses can be noisy.
+    <meta name="twitter:title"
+        content="TrackNeRF: Bundle Adjusting NeRF from Sparse and Noisy Views via Feature Tracks" />
+    <meta name="twitter:description"
+        content="Neural radiance fields (NeRFs) generally require many images with accurate poses for accurate novel view synthesis, which does not reflect realistic setups where views can be sparse and poses can be noisy.
     Previous solutions for learning NeRFs with sparse views and noisy poses only consider local geometry consistency with pairs of views. 
     Closely following bundle adjustment in Structure-from-Motion (SfM), we introduce TrackNeRF for more globally consistent geometry reconstruction and more accurate pose optimization. TrackNeRF introduces feature tracks, \ie connected pixel trajectories across \textit{all} visible views that correspond to the \textit{same} 3D points. By enforcing reprojection consistency among feature tracks, TrackNeRF encourages holistic 3D consistency explicitly. Through extensive experiments, TrackNeRF sets a new benchmark in noisy and sparse view reconstruction.
     In particular, TrackNeRF shows significant improvements over the state-of-the-art BARF and SPARF by $\sim8$ and $\sim1$ in terms of PSNR on DTU under various sparse and noisy view setups." />
-    <meta name="twitter:image" content="https://reconfusion.github.io/img/pipeline.png" />
+    <meta name="twitter:image" content="https://tracknerf.github.io/img/pipeline.png" />
 
 
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤔</text></svg>">
+    <!-- <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤔</text></svg>"> -->
+
+    <!-- <link rel="icon" href="img/favicon.png" type="image/png"> -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👣</text></svg>">
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -41,8 +51,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZERS5BVPS"></script>
+    <!-- Change this Google analytics into ours, remove this if you want to borrow this website template -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VN0XZ5CY7X"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -51,13 +62,16 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'G-8ZERS5BVPS');
+        gtag('config', 'G-VN0XZ5CY7X');
     </script>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
     <script defer src="js/fontawesome.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
@@ -73,7 +87,7 @@
 
 </head>
 
-<body style="padding: 5%; width: 100%">
+<body style="padding: 1%; width: 100%">
     <div class="container-lg text-center" style="max-width: 1500px; margin: auto;" id="main">
         <div class="row">
             <h2 class="col-md-12 text-center">
@@ -82,12 +96,12 @@
         </div>
     </div>
 
-    <div class="row text-center">
+    <!-- <div class="row text-center">
         <div class="col-md-3">
         </div>
         <div class="col-md-3">
         </div>
-    </div>
+    </div> -->
 
     <!-- <div class="row text-center">
         <span class="link-block">
@@ -99,6 +113,93 @@
         </a>
         </span>
     </div> -->
+
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6 text-center">
+        <ul class="list-inline">
+            <li>
+                <a href="https://scholar.google.com/citations?user=ksCEO0IAAAAJ&hl=en">
+                    Jinjie Mai
+                </a><sup>1</sup>
+            </li>
+            <li>
+                <a href="https://cemse.kaust.edu.sa/ivul/people/person/wenxuan-zhu">
+                    Wenxuan Zhu
+                </a><sup>1</sup>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?user=7vnDKiwAAAAJ&hl=en">
+                    Sara Rojas Martinez
+                </a><sup>1</sup>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?user=DWis350AAAAJ&hl=en">
+                    Jesus Zarzar
+                </a><sup>1</sup>
+            </li>
+            <wbr>
+            <li>
+                <a href="https://abdullahamdi.com/">
+                    Abdullah Hamdi
+                </a><sup>2</sup>
+            </li>
+            <li>
+                <a href="https://guochengqian.github.io/">
+                    Guocheng Qian
+                </a><sup>3</sup>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?user=xBiftlUAAAAJ&hl=en">
+                    Bing Li
+                </a><sup>1</sup>
+            </li>
+            <li>
+                <a href="https://www.silviogiancola.com/">
+                    Silvio Giancola
+                </a><sup>1</sup>
+            </li>
+            <wbr>
+            <li>
+                <a href="https://www.bernardghanem.com/">
+                    Bernard Ghanem
+                </a><sup>1</sup>
+            </li>
+            <!-- </br>Google -->
+        </ul>
+    </div>
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-12 text-center">
+        <sup>1</sup>King Abdullah University of Science and Technology, &nbsp <sup>2</sup>Visual Geometry Group,
+        University of Oxford, &nbsp <sup>3</sup>Snap Inc. &nbsp;
+        <!-- &nbsp; * equal contribution -->
+    </div>
+    <div class="col-md-12 text-center">
+        ECCV 2024
+    </div>
+    </div>
+
+
+    <div class="col-md-12 text-center">
+
+        <span class="link-block">
+            <a href="https://tracknerf.github.io/" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv(coming soon)</span>
+            </a>
+            
+            <a href="https://github.com/Wayne-Mai/traf_public" class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-code"></i>
+                </span>
+                <span>Code</span>
+            </a>
+        </span>
+    </div>
+
 
 
 
@@ -115,10 +216,18 @@
                 Abstract
             </h2>
             <p class="custom-font-size">
-                Neural radiance fields (NeRFs) generally require many images with accurate poses for accurate novel view synthesis, which does not reflect realistic setups where views can be sparse and poses can be noisy. Previous solutions for learning NeRFs with sparse
-                views and noisy poses only consider local geometry consistency with pairs of views. Closely following bundle adjustment in Structure-from-Motion (SfM), we introduce TrackNeRF for more globally consistent geometry reconstruction and more
-                accurate pose optimization. TrackNeRF introduce feature tracks, i.e. connected pixel trajectories across all visible views that correspond to the same 3D points. By enforcing reprojection consistency among feature tracks, TrackNeRF encourages
-                holistic 3D consistency explicitly. Through extensive experiments, TrackNeRF sets a new benchmark in noisy and sparse view reconstruction. In particular, TrackNeRF shows significant improvements over the state-of-the-art BARF and SPARF
+                Neural radiance fields (NeRFs) generally require many images with accurate poses for accurate novel view
+                synthesis, which does not reflect realistic setups where views can be sparse and poses can be noisy.
+                Previous solutions for learning NeRFs with sparse
+                views and noisy poses only consider local geometry consistency with pairs of views. Closely following
+                bundle adjustment in Structure-from-Motion (SfM), we introduce TrackNeRF for more globally consistent
+                geometry reconstruction and more
+                accurate pose optimization. TrackNeRF introduce feature tracks, i.e. connected pixel trajectories across
+                all visible views that correspond to the same 3D points. By enforcing reprojection consistency among
+                feature tracks, TrackNeRF encourages
+                holistic 3D consistency explicitly. Through extensive experiments, TrackNeRF sets a new benchmark in
+                noisy and sparse view reconstruction. In particular, TrackNeRF shows significant improvements over the
+                state-of-the-art BARF and SPARF
                 by around 8 and around 1 in terms of PSNR on DTU under various sparse and noisy view setups.
             </p>
         </div>
@@ -140,7 +249,8 @@
             </h3> -->
             <image src="img/pipeline.png" width=90% style="display: block; margin: auto;"></image><br>
             <p class="custom-font-size">
-                TrackNeRF minimizes the reprojection loss across all visible views for feature tracks corresponding to the same landmarks, thus guarantees global correspondence consistency from multiview.
+                TrackNeRF minimizes the reprojection loss across all visible views for feature tracks corresponding to
+                the same landmarks, thus guarantees global correspondence consistency from multiview.
             </p>
         </div>
     </div>
@@ -166,8 +276,8 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <video id="co3d-grid" width="100%" autoplay loop muted controls>
-                  <source src="videos/vis.mp4" type="video/mp4" />
-                </video>
+                <source src="videos/vis.mp4" type="video/mp4" />
+            </video>
             <br>
         </div>
     </div>
@@ -177,8 +287,8 @@
         <div class="col-md-8 col-md-offset-2">
             <h3> View Synthesis on DTU scan45 from 3 Input Views with with camera poses perturbed by 15% noise.</h3><br>
             <video id="co3d-grid" width="100%" autoplay loop muted controls>
-                  <source src="videos/dtu_scan45.mp4" type="video/mp4" />
-                </video>
+                <source src="videos/dtu_scan45.mp4" type="video/mp4" />
+            </video>
             <br>
             <!-- <p class="text-justify" style="text-align: center;">TrackNeRF generalizes to everyday scenes: the same diffusion model prior is used for <b>all</b> reconstruction results.</p> -->
         </div>
@@ -187,8 +297,8 @@
         <div class="col-md-8 col-md-offset-2">
             <h3> View Synthesis on LLFF leaves from 3 Input Views with camera poses perturbed by 15% noise</h3><br>
             <video id="co3d-grid" width="100%" autoplay loop muted controls>
-                  <source src="videos/llff_leaves.mp4" type="video/mp4" />
-                </video>
+                <source src="videos/llff_leaves.mp4" type="video/mp4" />
+            </video>
             <br>
         </div>
     </div>
@@ -196,8 +306,8 @@
         <div class="col-md-8 col-md-offset-2">
             <h3> View Synthesis on Dtu scan21 from 3 Input Views with camera poses perturbed by 35% noise.</h3><br>
             <video id="co3d-grid" width="100%" autoplay loop muted controls>
-                  <source src="videos/dtu_scan21_035.mp4" type="video/mp4" />
-                </video>
+                <source src="videos/dtu_scan21_035.mp4" type="video/mp4" />
+            </video>
             <br>
         </div>
     </div>
@@ -207,8 +317,11 @@
                 Tables
             </h2>
             <p class="custom-font-size">
-                We benchmark novel view synthesis and camera pose estimation methods on DTU with noisy initial poses with different numbers of input views (3, 6 or 9). We simulate noisy poses by adding 15% of Gaussian noise to the ground-truth poses. Rotation errors
-                are in degrees and translation errors are multiplied by 100. Results in (·) are computed by masking the background. Our TrackNeRF achieves the best performance in all setups.
+                We benchmark novel view synthesis and camera pose estimation methods on DTU with noisy initial poses
+                with different numbers of input views (3, 6 or 9). We simulate noisy poses by adding 15% of Gaussian
+                noise to the ground-truth poses. Rotation errors
+                are in degrees and translation errors are multiplied by 100. Results in (·) are computed by masking the
+                background. Our TrackNeRF achieves the best performance in all setups.
             </p>
             <image src="img/table.png" width=80% style="display: block; margin: auto;"></image>
         </div>
@@ -220,7 +333,8 @@
                 Visualization of Camera Poses under 15% of Noise
             </h2>
             <p class="custom-font-size">
-                While BARF can’t recover the camera pose well, both SPARF and our TrackNeRF can recover near perfect camera pose under 15% of noise on most scenes of DTU.
+                While BARF can’t recover the camera pose well, both SPARF and our TrackNeRF can recover near perfect
+                camera pose under 15% of noise on most scenes of DTU.
             </p>
             <image src="img/vis_pose_0.15.png" width=100% style="display: block; margin: auto;"></image>
 
@@ -237,6 +351,24 @@
             </p>
             <image src="img/vis_pose_0.35.png" width=100% style="display: block; margin: auto;"></image>
 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Acknowledgements
+            </h3>
+            <p class="text-justify">
+                This work was supported by the KAUST Office of Sponsored Research through the GenAI Center of Excellence funding, as well as, the SDAIA-KAUST Center of Excellence in Data Science and Artificial Intelligence (SDAIA-KAUST AI).
+                <br><br>
+                The website template was borrowed from 
+                <a href="https://prunetruong.com/sparf.github.io/">SPARF</a>, 
+                <a href="https://reconfusion.github.io/">ReconFusion</a>
+                <a href="http://mgharbi.com/">Michaël Gharbi</a> 
+                and <a
+                    href="https://dorverbin.github.io/refnerf">Ref-NeRF</a>.
+            </p>
         </div>
     </div>
 
