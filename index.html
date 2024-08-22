@@ -184,14 +184,15 @@
     <div class="col-md-12 text-center">
 
         <span class="link-block">
-            <a href="https://tracknerf.github.io/" class="external-link button is-normal is-rounded is-dark">
+            <a href="https://arxiv.org/abs/2408.10739" class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                     <i class="ai ai-arxiv"></i>
                 </span>
-                <span>arXiv(coming soon)</span>
+                <span>arXiv</span>
             </a>
-            
-            <a href="https://github.com/Wayne-Mai/traf_public" class="external-link button is-normal is-rounded is-dark">
+
+            <a href="https://github.com/Wayne-Mai/traf_public"
+                class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                     <i class="fas fa-code"></i>
                 </span>
@@ -354,20 +355,83 @@
         </div>
     </div>
 
+
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>
+                Citation
+            </h3>
+
+
+            <p class="text-justify"> Kudos to the great work PixSfM and SPARF, from which we borrow the code and build
+                TrackNeRF upon: </p>
+            <div class="form-group col-md-10 col-md-offset-1" style="margin-bottom:0px;">
+                <p class="text-justify">
+                    <textarea id="bibtex" class="form-control" readonly>
+                        @inproceedings{lindenberger2021pixsfm,
+                            author    = {Philipp Lindenberger and
+                                         Paul-Edouard Sarlin and
+                                         Viktor Larsson and
+                                         Marc Pollefeys},
+                            title     = {{Pixel-Perfect Structure-from-Motion with Featuremetric Refinement}},
+                            booktitle = {ICCV},
+                            year      = {2021},
+                          }
+
+                          @inproceedings{sparf2023,
+                            title={SPARF: Neural Radiance Fields from Sparse and Noisy Poses},
+                            author = {Truong, Prune and Rakotosaona, Marie-Julie and Manhardt, Fabian and Tombari, Federico},
+                            publisher = {{IEEE/CVF} Conference on Computer Vision and Pattern Recognition, {CVPR}},
+                            year = {2023}
+                          }</textarea></p>
+            </div>
+
+            <p class="text-justify" style="display: block; clear: both; width: 100%;"> If you find the code and paper
+                helpful, a citation will be appreciated via: </p>
+            <div class="form-group col-md-10 col-md-offset-1">
+                <p class="text-justify">
+                    <!-- We also change js function to adjust its layout -->
+                    <textarea id="bibtex2" class="form-control" readonly>
+                        @misc{mai2024tracknerfbundleadjustingnerf,
+                            title={TrackNeRF: Bundle Adjusting NeRF from Sparse and Noisy Views via Feature Tracks}, 
+                            author={Jinjie Mai and Wenxuan Zhu and Sara Rojas 
+                                and Jesus Zarzar and Abdullah Hamdi and Guocheng Qian 
+                                and Bing Li and Silvio Giancola and Bernard Ghanem},
+                            year={2024},
+                            eprint={2408.10739},
+                            archivePrefix={arXiv},
+                            primaryClass={cs.CV},
+                            url={https://arxiv.org/abs/2408.10739}, 
+                      }</textarea></p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <h3>
                 Acknowledgements
             </h3>
             <p class="text-justify">
-                This work was supported by the KAUST Office of Sponsored Research through the GenAI Center of Excellence funding, as well as, the SDAIA-KAUST Center of Excellence in Data Science and Artificial Intelligence (SDAIA-KAUST AI).
+                The research reported in this publication was supported by funding from KAUST Center of Excellence on
+                GenAI under award number 5940,
+                as well as, the SDAIA-KAUST Center of Excellence in Data Science and Artificial Intelligence
+                (SDAIA-KAUST AI). Part of the support is also coming from the KAUST Ibn Rushd Postdoc Fellowship
+                program.
                 <br><br>
-                The website template was borrowed from 
-                <a href="https://prunetruong.com/sparf.github.io/">SPARF</a>, 
-                <a href="https://reconfusion.github.io/">ReconFusion</a>
-                <a href="http://mgharbi.com/">Michaël Gharbi</a> 
-                and <a
-                    href="https://dorverbin.github.io/refnerf">Ref-NeRF</a>.
+                The website template was borrowed from
+                <a href="https://prunetruong.com/sparf.github.io/">SPARF</a>,
+                <a href="https://reconfusion.github.io/">ReconFusion</a>,
+                <a href="http://mgharbi.com/">Michaël Gharbi</a>
+                and <a href="https://dorverbin.github.io/refnerf">Ref-NeRF</a>.
             </p>
         </div>
     </div>

@@ -6,16 +6,44 @@ var activeVidID = 0;
 var select = false;
 
 
+// $(document).ready(function () {
+//     var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+//         lineNumbers: false,
+//         lineWrapping: true,
+//         readOnly: true
+//     });
+//     $(function () {
+//         $('[data-toggle="tooltip"]').tooltip()
+//     });
+
+//     activeMethodPill = $('.method-pill').filter('.active')[0];
+//     activeModePill = $('.mode-pill').filter('.active')[0];
+//     activeScenePill = $('.scene-pill').filter('.active')[0];
+
+//     resizeAndPlay($('#sparsity')[0]);
+// });
+
 $(document).ready(function () {
-    var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+    // Initialize CodeMirror for the first BibTeX element
+    var editor1 = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
         lineNumbers: false,
         lineWrapping: true,
         readOnly: true
     });
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
+
+    // Initialize CodeMirror for the second BibTeX element
+    var editor2 = CodeMirror.fromTextArea(document.getElementById("bibtex2"), {
+        lineNumbers: false,
+        lineWrapping: true,
+        readOnly: true
     });
 
+    // Initialize tooltips
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    // Handle active pills and resize behavior
     activeMethodPill = $('.method-pill').filter('.active')[0];
     activeModePill = $('.mode-pill').filter('.active')[0];
     activeScenePill = $('.scene-pill').filter('.active')[0];
